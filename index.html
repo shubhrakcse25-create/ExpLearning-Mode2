@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>Contact Us - Consulting Firm</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: plum;
+}
+
+header {
+    background: purple;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+section {
+    background: lightpink;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1100px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: black;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-box {
+    flex: 1;
+    min-width: 250px;
+    background: lavender;
+    padding: 20px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    background: aliceblue;
+    border: 2px black;
+    box-shadow: 
+        0 0 10px black,
+        0 0 20px grey;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+button {
+    background: lightgreen;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: blue;
+}
+
+
+details {
+    margin: 10px 0;
+    padding: 10px;
+    background: yellow;
+    border-radius: 5px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Our Consulting Team</h1>
+    <p>We’re ready to help your business grow</p>
+</header>
+
+<section>
+    <h2>Get in Touch</h2>
+    <div class="contact-container">
+        
+        <div class="contact-box">
+            <h3> Phone</h3>
+            <p>+91 98765 43210</p>
+            <p>Mon–Fri: 9 AM – 6 PM</p>
+        </div>
+
+        <div class="contact-box">
+            <h3> Email</h3>
+            <p>info@consultfirm.com</p>
+            <p>support@consultfirm.com</p>
+        </div>
+
+        <div class="contact-box">
+            <h3> Office</h3>
+            <p>Pune, Maharashtra, India</p>
+            <p>Business Tower, Floor 5</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Our Location</h2>
+    <iframe src="https://maps.google.com/maps?q=Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<section>
+    <h2>Send an Inquiry</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number">
+
+        <label>Service of Interest</label>
+        <select required>
+            <option value="">-- Select Service --</option>
+            <option>Business Strategy Consulting</option>
+            <option>Financial Advisory</option>
+            <option>IT Consulting</option>
+            <option>Market Research</option>
+            <option>Human Resource Consulting</option>
+        </select>
+
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+    </form>
+</section>
+
+<section>
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>What services do you provide?</summary>
+        <p>We offer strategy consulting, IT solutions, financial advisory, and HR consulting.</p>
+    </details>
+
+    <details>
+        <summary>How quickly will you respond?</summary>
+        <p>We usually respond within 24 hours.</p>
+    </details>
+
+    <details>
+        <summary>Do you offer customized solutions?</summary>
+        <p>Yes, all our consulting services are tailored to client needs.</p>
+    </details>
+
+    <details>
+        <summary>Is the first consultation free?</summary>
+        <p>Yes, we provide a free initial consultation.</p>
+    </details>
+
+</section>
+
+</body>
+</html>
